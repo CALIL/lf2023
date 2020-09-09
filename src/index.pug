@@ -3,25 +3,24 @@ html(lang="ja")
   head
     meta(charset="UTF-8")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
-    title template
+    title 図書館総合展2020 / カーリルブース
     link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap")
     link(rel="stylesheet", href="./index.css")
-  body#index
+  body
+    link(href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet")
+    #lf2020_header
+      #lf2020_navigation
+        a.backtolf(href="https://2020.libraryfair.jp/") 図書館総合へ
+        a.feelinglucky(href="") となりのブースへ
+      a(href="/lf2020/")#lf2020_title
+        img(src="./assets/logo-lf@2x.png")
+        div
+          h1 LF2020 ONLINE
+          h2 カーリルブース
+      .boothtop
+        a(href="") カーリルブースのトップへ
     main
       article
-        section.grid1
-            #itemA
-              div A
-              div AA
-              div AAA
-            #itemB B
-            #itemC C
-        section.grid2
-            .item A
-            .item B
-            .item C
-            .item D
-            .item E
-            .item F
-            .item G
+        section
     script(src="./js/index.js")

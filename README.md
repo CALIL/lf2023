@@ -1,15 +1,18 @@
-# LooselyTemplate
-npm scripts で pug+sassがビルドできてオートリロードできるサイト作成環境を書く  
-javascriptも修正するとオートリロードする（コンパイルはしない）
+# LF2020
 
-## 使い方
+図書館総合展2020向けのヘッダー  
+カーリルブース
+
+https://calil.github.io/lf2020/
+
+## Develop
 
 ```
 npm install  
 npm start
 ```
 
-## Windows
+### Windows
 
 Gitのインストール  
 https://git-scm.com/downloads
@@ -19,11 +22,6 @@ node-sassのビルドに必要なライブラリを入れる
 ```
 npm install --global --production windows-build-tools
 ```
-
-
-
-## デモ
-https://template-npm-scripts.netlify.com/
 
 ## ライセンスについて
 

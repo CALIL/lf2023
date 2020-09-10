@@ -11,21 +11,28 @@
 
 #lf2020_header
     background: #ffffff
-    padding: 2rem 2rem
+    padding: 2em 2em
     position: relative
     z-index: 100000000
+    @media screen and (max-width: 768px)
+        padding: 1rem
     #lf2020_navigation
         display: flex
         justify-content: space-between
+        @media screen and (max-width: 768px)
+            display: block
+            text-align: right
         .backtolf
             cursor: pointer
             position: relative
             font-size: 0.9em
             color: #000000
             text-decoration: none
-            padding: 0.5rem 1rem 0.25rem 1.5rem
+            padding: 0.5em 1em 0.25em 1.5em
             border-bottom: 2px solid #000000
-            &:hover
+            @media screen and (max-width: 768px)
+                display: none
+            &:hover,&:active
                 background-color: #000000
                 color: #FFFFFF
                 &::before
@@ -49,9 +56,9 @@
             font-size: 0.9em
             color: #000000
             text-decoration: none
-            padding: 0.5rem 1.5rem 0.25rem 1rem
+            padding: 0.5em 1.5em 0.25em 1em
             border-bottom: 2px solid #000000
-            &:hover
+            &:hover,&:active
                 background-color: #000000
                 color: #FFFFFF
                 &::after
@@ -77,33 +84,61 @@
         text-decoration: none
         margin-top: -3em
         @media screen and (max-width: 1050px)
-            margin-top: -2rem
-        img
-            cursor: pointer
-            width: 346px
-            height: 347px
-            margin-right: 5rem
+            margin-top: -2em
+        @media screen and (max-width: 768px)
+            display: block            
+        a.lflogo
+            @media screen and (max-width: 768px)
+                display: inline-block
+                position: relative
+                top: -1em
+                left: -1em
+            img
+                cursor: pointer
+                width: 346px
+                height: 347px
+                margin-right: 5em
+                @media screen and (max-width: 768px)
+                    width: 152px
+                    height: 152px
+                    margin-right: 0
         div
-            h1
-                cursor: pointer
-                display: block
-                font-size: 3em
-                font-family: 'Montserrat', sans-serif
-            h2
-                cursor: pointer
-                display: block
-                font-size: 2.9em
-                font-family: 'Noto Sans JP', sans-serif
+            @media screen and (max-width: 768px)
+                display: inline-block
+                position: absolute
+                top: 7.5em
+                right: 1rem
+            a
+                h1
+                    cursor: pointer
+                    display: block
+                    font-family: 'Montserrat', sans-serif
+                    font-size: 3em
+                    @media screen and (max-width: 768px)
+                        font-size: 1.65em
+                        text-align: right
+                h2
+                    cursor: pointer
+                    display: block
+                    font-family: 'Noto Sans JP', sans-serif
+                    font-size: 2.9em
+                    @media screen and (max-width: 768px)
+                        font-size: 1.6em
+                        text-align: right
+
     .boothtop
         display: block
         text-align: right
-        margin-bottom: 1rem
+        margin-bottom: 1em
+        @media screen and (max-width: 768px)
+            margin-top: 2.5em
+            margin-bottom: 0.5em
         a
             cursor: pointer
             font-size: 0.8em
             color: #ffffff
             background-color: #FC3C25
             text-decoration: none
-            padding: 0.75rem 3rem
-            &:hover
+            padding: 0.75em 3em
+            &:hover,&:active
                 background-color: #FFCC13

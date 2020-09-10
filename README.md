@@ -10,8 +10,16 @@ https://calil.github.io/lf2020/
 ```
 npm install  
 npm start
+```
+
+## Deploy
+
+```
 npm run deploy
 ```
+
+docs/ 以下に書き出し。  
+GitHub Pagesにホスティング。
 
 ### Windows
 

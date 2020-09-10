@@ -23,6 +23,13 @@ node-sassのビルドに必要なライブラリを入れる
 npm install --global --production windows-build-tools
 ```
 
+## CloudFunctions
+
+https://asia-northeast1-calil-sandbox.cloudfunctions.net/lfRedirect
+
+となりのブースへのランダムリンク用。  
+URLの管理はFireStoreで。
+
 ## ライセンスについて
 
 The MIT License (MIT)

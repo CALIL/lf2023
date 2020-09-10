@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "functions-framework --target=helloWorld",
+    "start": "functions-framework --target=lfRedirect",
     "deploy": "gcloud functions deploy lfRedirect --entry-point lfRedirect  --runtime nodejs12 --region asia-northeast1 --trigger-http --allow-unauthenticated",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

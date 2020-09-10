@@ -1,0 +1,18 @@
+{
+  "name": "cloudfunction",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "functions-framework --target=helloWorld",
+    "deploy": "gcloud functions deploy lfRedirect --entry-point lfRedirect  --runtime nodejs12 --region asia-northeast1 --trigger-http --allow-unauthenticated",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/functions-framework": "^1.6.0",
+    "firebase-admin": "^9.1.1",
+    "firebase-functions": "^3.11.0"
+  }
+}

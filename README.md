@@ -10,6 +10,7 @@ https://calil.github.io/lf2020/
 ```
 npm install  
 npm start
+npm run deploy
 ```
 
 ### Windows
@@ -24,6 +25,13 @@ npm install --global --production windows-build-tools
 ```
 
 ## CloudFunctions
+
+```
+cd cloudfunctions
+npm install  
+npm start
+npm run deploy
+```
 
 https://asia-northeast1-calil-sandbox.cloudfunctions.net/lfRedirect
 

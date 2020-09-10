@@ -11,41 +11,86 @@
 
 #lf2020_header
     background: #ffffff
-    padding: 2rem 1rem
+    padding: 2rem 2rem
     position: relative
-    z-index: 1000000
-    // border-bottom: 1px solid #000000
+    z-index: 100000000
     #lf2020_navigation
         display: flex
         justify-content: space-between
         .backtolf
-            font-size: 1em
+            cursor: pointer
+            position: relative
+            font-size: 0.9em
             color: #000000
             text-decoration: none
-            padding: 0.25rem 1rem
+            padding: 0.5rem 1rem 0.25rem 1.5rem
             border-bottom: 2px solid #000000
+            &:hover
+                background-color: #000000
+                color: #FFFFFF
+                &::before
+                    border-top: 2px solid #FFFFFF
+                    border-left: 2px solid #FFFFFF
+            &::before
+                position: absolute
+                top: 0.9em
+                left: 0.5em
+                content: ''
+                width: 8px
+                height: 8px
+                margin-right: 8px
+                display: inline-block
+                border-top: 2px solid #000000
+                border-left: 2px solid #000000
+                transform: rotate(-45deg)
         .feelinglucky
-            font-size: 1em
+            cursor: pointer
+            position: relative
+            font-size: 0.9em
             color: #000000
             text-decoration: none
-            padding: 0.25rem 1rem
+            padding: 0.5rem 1.5rem 0.25rem 1rem
             border-bottom: 2px solid #000000
+            &:hover
+                background-color: #000000
+                color: #FFFFFF
+                &::after
+                    border-bottom: 2px solid #FFFFFF
+                    border-right: 2px solid #FFFFFF
+            &::after
+                position: absolute
+                top: 0.9em
+                right: 0
+                content: ''
+                width: 8px
+                height: 8px
+                margin-right: 8px
+                display: inline-block
+                border-bottom: 2px solid #000000
+                border-right: 2px solid #000000
+                transform: rotate(-45deg)
     #lf2020_title
         display: flex
         align-items: center
         justify-content: center
         color: #000000
         text-decoration: none
+        margin-top: -3em
+        @media screen and (max-width: 1050px)
+            margin-top: -2rem
         img
+            cursor: pointer
             width: 346px
             height: 347px
             margin-right: 5rem
         div
             h1
+                cursor: pointer
                 display: block
                 font-size: 3em
                 font-family: 'Montserrat', sans-serif
             h2
+                cursor: pointer
                 display: block
                 font-size: 2.9em
                 font-family: 'Noto Sans JP', sans-serif
@@ -54,8 +99,11 @@
         text-align: right
         margin-bottom: 1rem
         a
-            font-size: 1em
+            cursor: pointer
+            font-size: 0.8em
             color: #ffffff
             background-color: #FC3C25
             text-decoration: none
-            padding: 0.5rem 2rem
+            padding: 0.75rem 3rem
+            &:hover
+                background-color: #FFCC13

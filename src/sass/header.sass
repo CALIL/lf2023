@@ -41,8 +41,11 @@
                 display: none
             &:hover,&:active
                 &::before
-                    left: 0
-                    transition: left 0.1s linear
+                    animation-name: backtolf
+                    animation-duration: 0.5s
+                    animation-timing-function: linear
+                    animation-delay: 0
+                    animation-iteration-count: 1
             &::before
                 position: absolute
                 top: 1em
@@ -68,8 +71,11 @@
             transition: background-color 0.25s linear
             &:hover,&:active
                 &::after
-                    right: -0.75em
-                    transition: right 0.1s linear
+                    animation-name: feelinglucky
+                    animation-duration: 0.5s
+                    animation-timing-function: linear
+                    animation-delay: 0
+                    animation-iteration-count: 1
             &::after
                 position: absolute
                 top: 1em
@@ -157,3 +163,20 @@
             &:hover,&:active
                 background-color: #FFCC13
                 transition: background-color 0.1s linear
+
+
+@keyframes backtolf
+    0%
+        left: 0.2em
+    50%
+        left: 0.5em
+    100%
+        left: 0.2em
+
+@keyframes feelinglucky
+    0%
+        right: -0.5em
+    50%
+        right: -0.75em
+    100%
+        right: -0.5em

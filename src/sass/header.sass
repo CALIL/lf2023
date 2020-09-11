@@ -37,16 +37,12 @@
             text-decoration: none
             padding: 0.5em 0em 0.4em 1.5em
             border-bottom: 2px solid #000000
-            transition: background-color 0.25s linear
             @media screen and (max-width: 768px)
                 display: none
             &:hover,&:active
-                background-color: #000000
-                color: #FFFFFF
-                transition: background-color 0.1s linear
                 &::before
-                    border-top: 2px solid #FFFFFF
-                    border-left: 2px solid #FFFFFF
+                    left: 0
+                    transition: left 0.1s linear
             &::before
                 position: absolute
                 top: 1em
@@ -71,12 +67,9 @@
             font-family: 'Noto Sans JP', sans-serif
             transition: background-color 0.25s linear
             &:hover,&:active
-                background-color: #000000
-                color: #FFFFFF
-                transition: background-color 0.1s linear
                 &::after
-                    border-bottom: 2px solid #FFFFFF
-                    border-right: 2px solid #FFFFFF
+                    right: -0.75em
+                    transition: right 0.1s linear
             &::after
                 position: absolute
                 top: 1em

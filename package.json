@@ -8,7 +8,7 @@
     "clean": "npx rimraf build",
     "watch": "concurrently \"npm run watch:pug\" \"npm run watch:sass\" \"npm run watch:js\" \"npm run watch:browser-sync\"",
     "watch:browser-sync": "npx browser-sync start --config ./bs-config.js",
-    "watch:sass": "./node_modules/.bin/chokidar \"./src/**/*.sass\" --command \"npm run build:sass && npm run build:autoprefixer\"",
+    "watch:sass": "./node_modules/.bin/chokidar \"./src/**/*.sass\" --command \"npm run build:sass && npm run build:sass2 && npm run build:autoprefixer\"",
     "watch:pug": "npm run build:pug -- --watch --pretty",
     "build": "npx npm-run-all clean build:** -s",
     "build:sass": "npx node-sass ./src/index.sass ./build/index.css --output-style compressed",

@@ -19,6 +19,8 @@ body
             background-color: #ffffff
             box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.16)
             border-radius: 6px
+            @media screen and (max-width: 1060px)
+                margin: 0 1rem
             @media screen and (max-width: 768px)
                 display: none
             a
@@ -41,8 +43,8 @@ body
                         width: 100%
                         border-bottom: 3px solid #0076FF
             .calil
-                justify-content: left
                 padding: 1rem 2rem
+                margin-right: auto
                 &.active, &:hover
                     &:after
                         display: none
@@ -72,13 +74,15 @@ body
         navigation.sp
             display: flex
             justify-content: space-between        
-            padding: 0 1rem    
+            padding: 0 1rem
+            @media screen and (min-width: 769px)
+                display: none
         article
             section
                 max-width: 1024px
                 margin: 0 auto
                 clear: both
-                @media screen and (max-width: 768px)
+                @media screen and (max-width: 1060px)
                     margin: 0 1rem
 
             section#concept
@@ -141,6 +145,8 @@ body
                 grid-template-columns: auto
                 grid-template-rows: 4.1rem 4.1rem 4.1rem 4.1rem
                 grid-row-gap: 0.5rem
+                @media screen and (min-width: 769px)
+                    display: none
                 a
                     position: relative
                     display: flex

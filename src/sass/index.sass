@@ -143,42 +143,44 @@ body
                         margin-bottom: 2rem
                         line-height: 2
                         letter-spacing: 0.02rem
-                    form
-                        display: flex
-                        align-items: center
-                        justify-content: right
-                        input
-                            flex: 1
-                            height: 54px
-                            padding: 0 1.2rem
-                            border-radius: 4px
-                            border: 1px solid #CCD1E5
-                            margin-right: 0.5rem
-                            box-sizing: border-box
-                            font-size: 1.2rem
-                            &::placeholder
-                                color: #C4C4C4
-                        button
-                            cursor: pointer
-                            flex: 0 0 135px
-                            height: 52px
-                            color: #ffffff
-                            font-weight: bold
-                            background-color: #004DFF
-                            border-radius: 4px
-                            font-size: 1rem
-                            border: none
-                            padding: 0.7rem 2rem
-                            margin-top: -2px
-                            outline: none
-                            box-shadow: 0px 3px 0px 0px #0033A8
-                            transition: color .3s, background.3s, box-shadow .3s, transform .3s
-                            &:hover
-                                background-color: #3874FF
-                            &:active
-                                transform: translateY(3px)
-                                box-shadow: 0px 0px 0px 0px #0033A8
-                                transition-duration: .1s
+                    #mc_embed_signup
+                        form
+                            > div
+                                display: flex
+                                align-items: center
+                                justify-content: right
+                                input[type="email"]
+                                    flex: 1
+                                    height: 54px
+                                    padding: 0 1.2rem
+                                    border-radius: 4px
+                                    border: 1px solid #CCD1E5
+                                    margin-right: 0.5rem
+                                    box-sizing: border-box
+                                    font-size: 1.2rem
+                                    &::placeholder
+                                        color: #C4C4C4
+                                input[type="submit"]
+                                    cursor: pointer
+                                    flex: 0 0 135px
+                                    height: 52px
+                                    color: #ffffff
+                                    font-weight: bold
+                                    background-color: #004DFF
+                                    border-radius: 4px
+                                    font-size: 1rem
+                                    border: none
+                                    padding: 0.7rem 2rem
+                                    margin-top: -2px
+                                    outline: none
+                                    box-shadow: 0px 3px 0px 0px #0033A8
+                                    transition: color .3s, background.3s, box-shadow .3s, transform .3s
+                                    &:hover
+                                        background-color: #3874FF
+                                    &:active
+                                        transform: translateY(3px)
+                                        box-shadow: 0px 0px 0px 0px #0033A8
+                                        transition-duration: .1s
 
             section.spmenu
                 display: grid

@@ -64,9 +64,21 @@ html(lang="ja")
           div
             h4 ニュースレターを受けとる
             p HogefugaLF2020 ONLINELF2020 ONLINELF2020ONLINELF2020 ONLINELF2020 ONLINELF2020 ONLINELF2020 ONLINELF2020 ONLINELF2020 ONLINELF2020 ONLINE
-            form
-              input(type="email" name="email" placeholder="メールアドレスを入力")
-              button 受け取る
+            // Begin Mailchimp Signup Form
+            #mc_embed_signup
+              form#mc-embedded-subscribe-form.validate(action="https://calil.us8.list-manage.com/subscribe/post?u=fcf762033c0bc2f84df6118fe&id=d90822e306" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate="")
+                #mc_embed_signup_scroll
+                  .mc-field-group
+                    input#mce-EMAIL.required.email(type="email" value="" name="EMAIL" placeholder="メールアドレスを入力")
+                  #mce-responses.clear
+                    #mce-error-response.response(style="display:none")
+                    #mce-success-response.response(style="display:none")
+                  // real people should not fill this in and expect good things - do not remove this or risk form bot signups
+                  div(style="position: absolute; left: -5000px;" aria-hidden="true")
+                    input(type="text" name="b_fcf762033c0bc2f84df6118fe_d90822e306" tabindex="-1" value="")
+                  .clear
+                    input#mc-embedded-subscribe.button(type="submit" value="受け取る" name="subscribe")
+            // End mc_embed_signup
         section.spmenu
           a.happyshop(href="")
             img(src="../assets/logo-happyshop.svg" alt="")

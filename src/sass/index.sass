@@ -3,15 +3,14 @@ html
 body
     #main
         background-color: #00A6EA
-        background-image: url(./assets/bg.svg)
-        background-position: calc(100% + 125px) -350px
+        background-image: url(./assets/catalogue-20202021-blue.svg)
+        background-position: right top
         background-repeat: no-repeat
         padding: 1.5rem 0
         @media screen and (max-width: 768px)
             background-color: #00A6EA
-            background-image: url(./assets/bg_tile.svg)
-            background-position: center center
-            background-repeat: repeat
+            background-image: url(./assets/catalogue-20202021-white.svg)
+            background-position: center 5rem
         navigation.pc
             max-width: 1024px
             height: 5rem
@@ -96,6 +95,8 @@ body
                     margin: 0 1.5rem
 
             section#concept
+                @media screen and (max-width: 1060px)
+                    margin-top: 20rem
                 > h3
                     color: #ffffff
                     font-size: 3.4rem
@@ -271,8 +272,10 @@ body
                         font-size: 1.4rem
                 img
                     max-width: 1024px
+                    width: 100%
 
             section#whatwearedoingnow
+                display: none
                 max-width: 100%
                 background-color: #00A6EA
                 background-image: url(./assets/bg_tile.svg)

@@ -340,11 +340,13 @@ body
                         margin-top: 3rem
                         @media screen and (max-width: 768px)
                             grid-template-columns: auto
-                            grid-row-gap: 40px
+                            grid-row-gap: 3rem
                         div
                             display: grid
                             grid-template-rows: 300px 5rem 1fr 5rem
                             grid-template-columns: auto
+                            @media screen and (max-width: 768px)
+                                grid-template-rows: 180px 5rem 1fr 5rem
                             img
                                 display: block
                                 background-color: #ffffff

@@ -309,12 +309,10 @@ body
                     width: 100%
 
             section#whatwearedoingnow
-                display: none
                 max-width: 100%
                 background-color: #00A6EA
                 background-image: url(./assets/bg_tile.svg)
                 background-position: center center
-                padding-top: 2rem
                 > div
                     max-width: 1024px
                     margin: 4rem auto
@@ -337,13 +335,16 @@ body
                         display: grid
                         grid-template-rows: 1fr 1fr
                         grid-template-columns: auto auto
-                        grid-column-gap: 30px
-                        grid-row-gap: 80px
+                        grid-column-gap: 2rem
+                        grid-row-gap: 5rem
                         margin-top: 3rem
                         @media screen and (max-width: 768px)
                             grid-template-columns: auto
                             grid-row-gap: 40px
                         div
+                            display: grid
+                            grid-template-rows: 300px 5rem 1fr 5rem
+                            grid-template-columns: auto
                             img
                                 display: block
                                 background-color: #ffffff
@@ -376,15 +377,19 @@ body
                                 @media screen and (max-width: 768px)
                                     font-size: 0.95rem
                             .more
+                                display: flex
+                                justify-content: center
+                                align-items: center
                                 font-family: 'Noto Sans JP', sans-serif
                                 color: #ffffff
-                                text-align: center
                                 text-decoration: none
                                 border: 1px solid #ffffff
                                 border-radius: 50px
                                 margin-top: 1.5rem
                                 padding: 0.8rem 0
-                                display: block
+                                &:hover, &:active
+                                    color: #00A6EA
+                                    background-color: #ffffff
 
                                     
 

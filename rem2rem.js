@@ -5,11 +5,10 @@ fs.readFile(sass, 'utf8', function (err,data) {
     return console.log(err);
   }
 //   console.log(data)
-  var result = data.replace(/rem\((.*?)\)/g, function(match) {
+  var result = data.replace(/([\d+\.]+)rem/g, function(match) {
     console.log(match)
     var m = match.match(/[\d+\.]+/);
-    var value = parseFloat(m);
-    return Math.ceil(value * 0.625 * 100) / 100 + 'rem'
+    return 'rem(' + m + ')';
   });
 
   fs.writeFile(sass, result, 'utf8', function (err) {

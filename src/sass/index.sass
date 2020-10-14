@@ -1,6 +1,6 @@
 @function rem($value)
         @return ceil($value * 0.625 * 100) / 100 * 1rem
-    
+
 html
     scroll-behavior: smooth
 body
@@ -9,14 +9,14 @@ body
         background-image: url(./assets/catalogue-20202021-blue.svg)
         background-position: right top
         background-repeat: no-repeat
-        padding: 1.5rem 0
+        padding: rem(1.5) 0
         @media screen and (max-width: 768px)
             background-color: #00A6EA
             background-image: url(./assets/catalogue-20202021-white.svg)
-            background-position: center 5rem
+            background-position: center rem(5)
         navigation.pc
             max-width: 1024px
-            height: 5rem
+            height: rem(5)
             margin: 0 auto
             display: grid
             grid-template-rows: auto
@@ -27,7 +27,7 @@ body
             box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.16)
             border-radius: 6px
             @media screen and (max-width: 1060px)
-                margin: 0 1rem
+                margin: 0 rem(1)
             @media screen and (max-width: 768px)
                 display: none
             a
@@ -35,11 +35,11 @@ body
                 align-items: center
                 justify-content: center
                 font-family: 'Noto Sans JP', sans-serif
-                font-size: 1rem
+                font-size: rem(1)
                 color: #000000
                 text-decoration: none
-                height: 5rem
-                padding: 0 1.5rem
+                height: rem(5)
+                padding: 0 rem(1.5)
                 &.active, &:hover
                     position: relative
                     &:after
@@ -50,7 +50,7 @@ body
                         width: 100%
                         border-bottom: 4px solid #0076FF
             .calil
-                padding: 1rem 2rem
+                padding: rem(1) rem(2)
                 margin-right: auto
                 &.active, &:hover
                     &:after
@@ -61,27 +61,27 @@ body
             .zoom
                 background-image: url(./assets/logo-zoom.svg)
                 background-size: 34px 34px
-                background-position: 0.5rem center
+                background-position: rem(0.5) center
                 background-repeat: no-repeat
-                padding-left: calc(1rem + 34px)
+                padding-left: calc(rem(1) + 34px)
             .happyshop
                 flex-direction: column
-                font-size: 0.85rem
+                font-size: rem(0.85)
                 text-align: center
                 background-color: #FFF000
                 background-image: url(./assets/icon-shop@2x.png)
                 background-size: 43px 43px
-                background-position: 1rem 1rem
+                background-position: rem(1) rem(1)
                 background-repeat: no-repeat
-                padding: 1rem
-                padding-top: 1.5rem
-                padding-left: calc(1rem + 43px + 1rem)
+                padding: rem(1)
+                padding-top: rem(1.5)
+                padding-left: calc(rem(1) + 43px + rem(1))
                 border-top-right-radius: 6px
                 border-bottom-right-radius: 6px
         navigation.sp
             display: flex
             justify-content: space-between        
-            padding: 0 1.5rem
+            padding: 0 rem(1.5)
             @media screen and (min-width: 769px)
                 display: none
             a
@@ -95,34 +95,34 @@ body
                 margin: 0 auto
                 clear: both
                 @media screen and (max-width: 1060px)
-                    margin: 0 1.5rem
+                    margin: 0 rem(1.5)
 
             section#concept
                 @media screen and (max-width: 1060px)
-                    margin-top: 20rem
+                    margin-top: rem(20)
                 > h3
                     color: #ffffff
-                    font-size: 3.4rem
+                    font-size: rem(3.4)
                     font-family: 'Noto Sans JP', sans-serif
                     font-weight: 900
-                    line-height: 5rem
+                    line-height: rem(5)
                     margin-top: 100px
                     margin-bottom: 60px
-                    letter-spacing: 0.2rem
+                    letter-spacing: rem(0.2)
                     @media screen and (max-width: 768px)
-                        font-size: 1.8rem
-                        line-height: 2.4rem
+                        font-size: rem(1.8)
+                        line-height: rem(2.4)
                 > p
                     color: #ffffff
-                    font-size: 1.1rem
+                    font-size: rem(1.1)
                     font-weight: bold
-                    margin-bottom: 6rem
+                    margin-bottom: rem(6)
                     max-width: 710px
                     line-height: 2
-                    letter-spacing: 0.02rem
+                    letter-spacing: rem(0.02)
                     @media screen and (max-width: 768px)
-                        font-size: 0.95rem
-                        margin-bottom: 2rem
+                        font-size: rem(0.95)
+                        margin-bottom: rem(2)
                     a
                         color: #ffffff
                         &:visited
@@ -135,26 +135,26 @@ body
                     font-weight: bold
                     max-width: 710px
                     background-color: #ffffff
-                    padding: 5rem 5rem
+                    padding: rem(5) rem(5)
                     border-radius: 4px
                     box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.16)
                     @media screen and (max-width: 768px)
                         width: 100%
-                        padding: 2rem
-                        margin-bottom: 3rem
+                        padding: rem(2)
+                        margin-bottom: rem(3)
                     h4
-                        font-size: 1.8rem
+                        font-size: rem(1.8)
                         font-family: 'Noto Sans JP', sans-serif
                         font-weight: 900
                         margin: 0
                         @media screen and (max-width: 768px)
-                            font-size: 1.2rem
+                            font-size: rem(1.2)
                     p
-                        font-size: 1rem
+                        font-size: rem(1)
                         font-weight: bold
-                        margin-bottom: 2rem
+                        margin-bottom: rem(2)
                         line-height: 2
-                        letter-spacing: 0.02rem
+                        letter-spacing: rem(0.02)
                         a
                             display: inline-flex
                             align-items: center
@@ -163,8 +163,8 @@ body
                             &:hover
                                 text-decoration: underline
                             span
-                                font-size: 1.25rem
-                                margin-right: 0.25rem
+                                font-size: rem(1.25)
+                                margin-right: rem(0.25)
                     #mc_embed_signup
                         form
                             .mc-field-group
@@ -177,16 +177,16 @@ body
                                     flex-direction: column
                                 input[type="email"]
                                     height: 54px
-                                    padding: 0 1.2rem
+                                    padding: 0 rem(1.2)
                                     border-radius: 4px
                                     border: 1px solid #CCD1E5
-                                    margin-right: 0.5rem
+                                    margin-right: rem(0.5)
                                     box-sizing: border-box
-                                    font-size: 1.2rem
+                                    font-size: rem(1.2)
                                     &::placeholder
                                         color: #C4C4C4
                                     @media screen and (max-width: 768px)
-                                        margin-bottom: 0.5rem
+                                        margin-bottom: rem(0.5)
                                 input[type="submit"]
                                     cursor: pointer
                                     flex: 0 0 135px
@@ -195,9 +195,9 @@ body
                                     font-weight: bold
                                     background-color: #004DFF
                                     border-radius: 4px
-                                    font-size: 1rem
+                                    font-size: rem(1)
                                     border: none
-                                    padding: 0.7rem 2rem
+                                    padding: rem(0.7) rem(2)
                                     margin-top: -2px
                                     outline: none
                                     box-shadow: 0px 3px 0px 0px #0033A8
@@ -212,8 +212,8 @@ body
             section.spmenu
                 display: grid
                 grid-template-columns: auto
-                grid-template-rows: 4.1rem 4.1rem 4.1rem 4.1rem
-                grid-row-gap: 0.5rem
+                grid-template-rows: rem(4.1) rem(4.1) rem(4.1) rem(4.1)
+                grid-row-gap: rem(0.5)
                 @media screen and (min-width: 769px)
                     display: none
                 a
@@ -226,14 +226,14 @@ body
                     background-color: #ffffff
                     border-radius: 6px
                     font-family: 'Noto Sans JP', sans-serif
-                    font-size: 0.85rem
+                    font-size: rem(0.85)
                     &:visited
                         color: #000000
                     &::after
                         position: absolute
                         top: auto
                         bottom: auto
-                        right: 0.35rem
+                        right: rem(0.35)
                         content: ''
                         width: 6px
                         height: 6px
@@ -249,20 +249,20 @@ body
                     img
                         width: 27px
                         height: 27px
-                        margin-right: 0.5rem
+                        margin-right: rem(0.5)
 
             section#whatsnew
                 background-color: #ffffff
                 border-radius: 5px
-                padding: 1.5rem 2rem
-                margin: 3rem auto
+                padding: rem(1.5) rem(2)
+                margin: rem(3) auto
                 h4
-                    margin: 0 0 1rem
+                    margin: 0 0 rem(1)
                 a
                     color: #004DFF
-                    font-size: 1.2rem
+                    font-size: rem(1.2)
                     text-decoration: none
-                    margin-bottom: 1rem
+                    margin-bottom: rem(1)
                     &:hover
                         text-decoration: underline
 
@@ -271,21 +271,21 @@ body
                     color: #ffffff
                     font-family: 'Noto Sans JP', sans-serif
                     font-weight: 900
-                    font-size: 2.2rem
-                    margin:  0 0 1rem
+                    font-size: rem(2.2)
+                    margin:  0 0 rem(1)
                     @media screen and (max-width: 768px)
-                        font-size: 1.4rem
+                        font-size: rem(1.4)
                 p
                     color: #ffffff
-                    font-size: 1rem
+                    font-size: rem(1)
                     font-weight: bold
-                    margin-bottom: 2rem
+                    margin-bottom: rem(2)
                     line-height: 2
-                    letter-spacing: 0.02rem
+                    letter-spacing: rem(0.02)
             section.happyshop
                 width: 100%
                 max-width: 100%
-                margin: 5rem 0 0
+                margin: rem(5) 0 0
                 @media screen and (max-width: 768px)
                     display: none
                 a
@@ -293,34 +293,34 @@ body
                     align-items: center
                     justify-content: center
                     width: 100%
-                    height: 20rem
+                    height: rem(20)
                     background-color: #FFF000
                     background-image: url(./assets/icon-shop@2x.png)
                     background-size: 86px 86px
-                    background-position: calc(50% - 240px - 5rem) 110px
+                    background-position: calc(50% - 240px - rem(5)) 110px
                     background-repeat: no-repeat
-                    padding: 1.5rem
+                    padding: rem(1.5)
                     text-align: center
                     color: #000000
                     text-decoration: none
                     font-family: 'Noto Sans JP', sans-serif
                     font-weight: 900
-                    font-size: 2.2rem
+                    font-size: rem(2.2)
                     img
                         width: 400px
-                        margin-right: 1rem
+                        margin-right: rem(1)
 
             section#completion
-                margin: 3rem auto 0
+                margin: rem(3) auto 0
                 h4
                     color: #ffffff
                     font-family: 'Noto Sans JP', sans-serif
                     font-weight: 900
-                    font-size: 2.2rem
-                    margin:  0 0 1rem
+                    font-size: rem(2.2)
+                    margin:  0 0 rem(1)
                     text-align: center
                     @media screen and (max-width: 768px)
-                        font-size: 1.4rem
+                        font-size: rem(1.4)
                 img
                     max-width: 1024px
                     width: 100%
@@ -332,38 +332,38 @@ body
                 background-position: center center
                 > div
                     max-width: 1024px
-                    margin: 4rem auto
+                    margin: rem(4) auto
                     h3
                         color: #ffffff
-                        font-size: 2.2rem
+                        font-size: rem(2.2)
                         font-family: 'Noto Sans JP', sans-serif
                         font-weight: 900
                         margin:  0
                         @media screen and (max-width: 768px)
-                            font-size: 1.4rem
+                            font-size: rem(1.4)
                     > p
                         color: #ffffff
                         font-weight: bold
                         line-height: 2
-                        letter-spacing: 0.02rem
+                        letter-spacing: rem(0.02)
                         @media screen and (max-width: 768px)
-                            font-size: 0.95rem
+                            font-size: rem(0.95)
                     > div
                         display: grid
                         grid-template-rows: 1fr 1fr 1fr
                         grid-template-columns: auto auto
-                        grid-column-gap: 2rem
-                        grid-row-gap: 5rem
-                        margin-top: 3rem
+                        grid-column-gap: rem(2)
+                        grid-row-gap: rem(5)
+                        margin-top: rem(3)
                         @media screen and (max-width: 768px)
                             grid-template-columns: auto
-                            grid-row-gap: 3rem
+                            grid-row-gap: rem(3)
                         div
                             display: grid
-                            grid-template-rows: 300px 5rem 1fr 5rem
+                            grid-template-rows: 300px rem(5) 1fr rem(5)
                             grid-template-columns: auto
                             @media screen and (max-width: 768px)
-                                grid-template-rows: 180px 5rem 1fr 5rem
+                                grid-template-rows: 180px rem(5) 1fr rem(5)
                             img
                                 display: block
                                 background-color: #ffffff
@@ -374,27 +374,27 @@ body
                                 @media screen and (max-width: 768px)
                                     height: 180px
                             h4
-                                margin-top: 2rem
-                                margin-bottom: 1rem
-                                letter-spacing: 0.03rem
+                                margin-top: rem(2)
+                                margin-bottom: rem(1)
+                                letter-spacing: rem(0.03)
                                 a
                                     color: #ffffff
-                                    font-size: 1.6rem
+                                    font-size: rem(1.6)
                                     font-family: 'Noto Sans JP', sans-serif
                                     font-weight: 900
                                     text-decoration: none
                                     @media screen and (max-width: 768px)
-                                        font-size: 1.4rem
+                                        font-size: rem(1.4)
                             p
                                 color: #ffffff
                                 font-weight: bold
                                 margin: 0
-                                font-size: 0.9rem
+                                font-size: rem(0.9)
                                 line-height: 1.8
-                                letter-spacing: 0.02rem
+                                letter-spacing: rem(0.02)
                                 text-align: justify
                                 @media screen and (max-width: 768px)
-                                    font-size: 0.95rem
+                                    font-size: rem(0.95)
                             .more
                                 display: flex
                                 justify-content: center
@@ -404,8 +404,8 @@ body
                                 text-decoration: none
                                 border: 1px solid #ffffff
                                 border-radius: 50px
-                                margin-top: 1.5rem
-                                padding: 0.8rem 0
+                                margin-top: rem(1.5)
+                                padding: rem(0.8) 0
                                 &:hover, &:active
                                     color: #00A6EA
                                     background-color: #ffffff

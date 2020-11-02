@@ -286,13 +286,86 @@ body
                     margin:  0 0 rem(1)
                     @media screen and (max-width: 768px)
                         font-size: rem(1.4)
-                p
-                    color: #ffffff
-                    font-size: rem(1)
-                    font-weight: bold
-                    margin-bottom: rem(2)
-                    line-height: 2
-                    letter-spacing: rem(0.02)
+                > div
+                    max-width: 1024px
+                    margin: rem(4) auto
+                    h3
+                        color: #ffffff
+                        font-size: rem(2.2)
+                        font-family: 'Noto Sans JP', sans-serif
+                        font-weight: 900
+                        margin:  0
+                        @media screen and (max-width: 768px)
+                            font-size: rem(1.4)
+                    > p
+                        color: #ffffff
+                        font-weight: bold
+                        line-height: 2
+                        letter-spacing: rem(0.02)
+                        @media screen and (max-width: 768px)
+                            font-size: rem(0.95)
+                    > div
+                        display: grid
+                        grid-template-rows: 1fr
+                        grid-template-columns: auto auto
+                        grid-column-gap: rem(2)
+                        grid-row-gap: rem(5)
+                        margin-top: rem(3)
+                        @media screen and (max-width: 768px)
+                            grid-template-columns: auto
+                            grid-row-gap: rem(3)
+                        div
+                            display: grid
+                            grid-template-rows: 300px rem(5) 1fr rem(5)
+                            grid-template-columns: auto
+                            @media screen and (max-width: 768px)
+                                grid-template-rows: 180px rem(5) 1fr rem(5)
+                            img
+                                display: block
+                                background-color: #ffffff
+                                width: 100%
+                                height: 300px
+                                border-radius: 4px
+                                object-fit: cover
+                                @media screen and (max-width: 768px)
+                                    height: 180px
+                            h4
+                                margin-top: rem(2)
+                                margin-bottom: rem(1)
+                                letter-spacing: rem(0.03)
+                                a
+                                    color: #ffffff
+                                    font-size: rem(1.6)
+                                    font-family: 'Noto Sans JP', sans-serif
+                                    font-weight: 900
+                                    text-decoration: none
+                                    @media screen and (max-width: 768px)
+                                        font-size: rem(1.4)
+                            p
+                                color: #ffffff
+                                font-weight: bold
+                                margin: 0
+                                font-size: rem(0.9)
+                                line-height: 1.8
+                                letter-spacing: rem(0.02)
+                                text-align: justify
+                                @media screen and (max-width: 768px)
+                                    font-size: rem(0.95)
+                            .more
+                                display: flex
+                                justify-content: center
+                                align-items: center
+                                font-family: 'Noto Sans JP', sans-serif
+                                color: #ffffff
+                                text-decoration: none
+                                border: 1px solid #ffffff
+                                border-radius: 50px
+                                margin-top: rem(1.5)
+                                padding: rem(0.8) 0
+                                &:hover, &:active
+                                    color: #00A6EA
+                                    background-color: #ffffff
+
             section.happyshop
                 width: 100%
                 max-width: 100%

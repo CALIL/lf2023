@@ -1,9 +1,9 @@
 # LF2020
 
-図書館総合展2020向けのヘッダー  
+図書館総合展2021向けのヘッダー  
 カーリルブース
 
-https://calil.github.io/lf2020/
+https://calil.github.io/lf2021/
 
 ## Develop
 
@@ -14,23 +14,8 @@ npm start
 
 ## Deploy
 
-```
-npm run deploy
-```
-
-docs/ 以下に書き出し。  
-GitHub Pagesにホスティング。
-
-### Windows
-
-Gitのインストール  
-https://git-scm.com/downloads
-
-
-node-sassのビルドに必要なライブラリを入れる
-```
-npm install --global --production windows-build-tools
-```
+GitHub Actionsで。  
+コミットするとデプロイされる。
 
 ## CloudFunctions
 

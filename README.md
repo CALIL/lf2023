@@ -15,7 +15,15 @@ npm start
 ## Deploy
 
 GitHub Actionsで。  
-コミットするとデプロイされる。
+コミットするとデプロイされる。  
+
+Todo
+
+```
+"deploy": "cpx \"build/**/*\" docs/ && node ./replace_path.js",
+```
+
+これをGitHub Actionsに組み込む
 
 ## CloudFunctions
 

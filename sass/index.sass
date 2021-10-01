@@ -1,0 +1,503 @@
+@function rem($value)
+        @return ceil($value * 1.6 * 100) / 100 * 1rem
+
+html
+    scroll-behavior: smooth
+body
+    #calil_booth
+        box-shadow: inset 0px 3px 6px 0px rgba(0,0,0,0.16)
+    .calil-main-contents
+        background-color: #00A6EA
+        background-image: url(./assets/catalogue-20202021-blue.svg)
+        background-position: right top
+        background-repeat: no-repeat
+        padding: rem(1.5) 0
+        @media screen and (max-width: 768px)
+            background-color: #00A6EA
+            background-image: url(./assets/catalogue-20202021-white.svg)
+            background-position: center rem(5)
+        navigation.pc
+            max-width: 1024px
+            height: rem(5)
+            margin: 0 auto
+            display: grid
+            grid-template-rows: auto
+            grid-template-columns: 1fr auto auto auto auto auto
+            grid-column-gap: 0
+            padding: 0
+            background-color: #ffffff
+            box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.16)
+            border-radius: 6px
+            @media screen and (max-width: 1060px)
+                margin: 0 rem(1)
+            @media screen and (max-width: 768px)
+                display: none
+            a
+                display: inline-flex
+                align-items: center
+                justify-content: center
+                font-family: 'Noto Sans JP', sans-serif
+                font-size: rem(1)
+                color: #000000
+                text-decoration: none
+                height: rem(5)
+                padding: 0 rem(1.5)
+                &.active, &:hover
+                    position: relative
+                    &:after
+                        content: ''
+                        position: absolute
+                        left: 0
+                        bottom: 0
+                        width: 100%
+                        border-bottom: 4px solid #0076FF
+            .calil
+                padding: rem(1) rem(2)
+                margin-right: auto
+                &.active, &:hover
+                    &:after
+                        display: none
+                img
+                    display: inline-flex
+                    align-items: center
+            .zoom
+                background-image: url(./assets/logo-zoom.svg)
+                background-size: 34px 34px
+                background-position: rem(0.5) center
+                background-repeat: no-repeat
+                padding-left: calc(16px + 34px)
+            .happyshop
+                flex-direction: column
+                font-size: rem(0.85)
+                text-align: center
+                background-color: #FFF000
+                background-image: url(./assets/icon-shop@2x.png)
+                background-size: 43px 43px
+                background-position: rem(1) rem(1)
+                background-repeat: no-repeat
+                padding: rem(1)
+                padding-top: rem(1.5)
+                padding-left: calc(16px + 43px + 16px)
+                border-top-right-radius: 6px
+                border-bottom-right-radius: 6px
+        navigation.sp
+            display: flex
+            justify-content: space-between        
+            padding: 0 rem(1.5)
+            @media screen and (min-width: 769px)
+                display: none
+            a
+                svg
+                    width: 93px
+            img
+                width: 21px
+        article
+            section
+                max-width: 1024px
+                margin: 0 auto
+                clear: both
+                @media screen and (max-width: 1060px)
+                    margin: 0 rem(1.5)
+
+            section#concept
+                @media screen and (max-width: 1060px)
+                    margin-top: rem(20)
+                > h3
+                    color: #ffffff
+                    font-size: rem(3.4)
+                    font-family: 'Noto Sans JP', sans-serif
+                    font-weight: 900
+                    line-height: rem(5)
+                    margin-top: 100px
+                    margin-bottom: 60px
+                    letter-spacing: rem(0.2)
+                    @media screen and (max-width: 768px)
+                        font-size: rem(1.8)
+                        line-height: rem(2.4)
+                > p
+                    color: #ffffff
+                    font-size: rem(1.1)
+                    font-weight: bold
+                    margin-bottom: rem(6)
+                    max-width: 710px
+                    line-height: 2
+                    letter-spacing: rem(0.02)
+                    @media screen and (max-width: 768px)
+                        font-size: rem(0.95)
+                        margin-bottom: rem(2)
+                    a
+                        color: #ffffff
+                        &:visited
+                            color: #ffffff
+
+            section.news_letter
+                display: flex
+                justify-content: flex-end
+                > div
+                    font-weight: bold
+                    max-width: 710px
+                    background-color: #ffffff
+                    padding: rem(5) rem(5)
+                    border-radius: 4px
+                    box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.16)
+                    @media screen and (max-width: 768px)
+                        width: 100%
+                        padding: rem(2)
+                        margin-bottom: rem(3)
+                    h4
+                        font-size: rem(1.8)
+                        font-family: 'Noto Sans JP', sans-serif
+                        font-weight: 900
+                        margin: 0
+                        @media screen and (max-width: 768px)
+                            font-size: rem(1.2)
+                    p
+                        font-size: rem(1)
+                        font-weight: bold
+                        margin-bottom: rem(2)
+                        line-height: 2
+                        letter-spacing: rem(0.02)
+                        a
+                            display: inline-flex
+                            align-items: center
+                            color: #004DFF
+                            text-decoration: none
+                            &:hover
+                                text-decoration: underline
+                            span
+                                font-size: rem(1.25)
+                                margin-right: rem(0.25)
+                    #mc_embed_signup
+                        form
+                            .mc-field-group
+                                display: flex
+                            > div
+                                display: flex
+                                align-items: center
+                                justify-content: right
+                                @media screen and (max-width: 768px)
+                                    flex-direction: column
+                                input[type="email"]
+                                    height: 54px
+                                    padding: 0 rem(1.2)
+                                    border-radius: 4px
+                                    border: 1px solid #CCD1E5
+                                    margin-right: rem(0.5)
+                                    box-sizing: border-box
+                                    font-size: rem(1.2)
+                                    &::placeholder
+                                        color: #C4C4C4
+                                    @media screen and (max-width: 768px)
+                                        font: inherit
+                                        width: 100%
+                                        margin-bottom: rem(0.5)
+                                input[type="submit"]
+                                    cursor: pointer
+                                    flex: 0 0 135px
+                                    height: 52px
+                                    color: #ffffff
+                                    font-weight: bold
+                                    background-color: #004DFF
+                                    border-radius: 4px
+                                    font-size: rem(1)
+                                    border: none
+                                    padding: rem(0.7) rem(2)
+                                    margin-top: -2px
+                                    outline: none
+                                    box-shadow: 0px 3px 0px 0px #0033A8
+                                    transition: color .3s, background .3s, box-shadow .3s, transform .3s
+                                    &:hover
+                                        background-color: #3874FF
+                                    &:active
+                                        transform: translateY(3px)
+                                        box-shadow: 0px 0px 0px 0px #0033A8
+                                        transition-duration: .1s
+
+            section.spmenu
+                display: grid
+                grid-template-columns: auto
+                grid-template-rows: rem(4.1) rem(4.1) rem(4.1) rem(4.1)
+                grid-row-gap: rem(0.5)
+                @media screen and (min-width: 769px)
+                    display: none
+                a
+                    position: relative
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    color: #000000
+                    text-decoration: none
+                    background-color: #ffffff
+                    border-radius: 6px
+                    font-family: 'Noto Sans JP', sans-serif
+                    font-size: rem(0.85)
+                    &:visited
+                        color: #000000
+                    &::after
+                        position: absolute
+                        top: auto
+                        bottom: auto
+                        right: rem(0.35)
+                        content: ''
+                        width: 6px
+                        height: 6px
+                        margin-right: 8px
+                        display: inline-block
+                        border-bottom: 2px solid #000000
+                        border-right: 2px solid #000000
+                        transform: rotate(-45deg)
+                .happyshop
+                    flex-direction: column
+                    background-color: #FFF000
+                    img
+                        width: inherit
+                .zoom
+                    img
+                        width: 27px
+                        height: 27px
+                        margin-right: rem(0.5)
+
+            section.booth
+                img
+                    display: block
+                    width: 1024px
+                    margin: 0 auto
+                    border: 4px solid #ffffff
+
+            #bg_tile
+                background-color: #00A6EA
+                background-image: url(./assets/bg_tile.svg)
+                background-position: center center
+                padding-top: 5rem
+
+            section#whatsnew
+                background-color: #ffffff
+                border-radius: 5px
+                padding: rem(1.5) rem(2)
+                margin: rem(3) auto
+                h4
+                    margin: 0 0 rem(1)
+                a
+                    color: #004DFF
+                    font-size: rem(1.2)
+                    text-decoration: none
+                    margin-bottom: rem(1)
+                    &:hover
+                        text-decoration: underline
+
+            section#labo
+                h3
+                    color: #ffffff
+                    font-family: 'Noto Sans JP', sans-serif
+                    font-weight: 900
+                    font-size: rem(2.2)
+                    margin:  0 0 rem(1)
+                    @media screen and (max-width: 768px)
+                        font-size: rem(1.4)
+                > div
+                    max-width: 1024px
+                    margin: rem(4) auto
+                    h3
+                        color: #ffffff
+                        font-size: rem(2.2)
+                        font-family: 'Noto Sans JP', sans-serif
+                        font-weight: 900
+                        margin:  0
+                        @media screen and (max-width: 768px)
+                            font-size: rem(1.4)
+                    > p
+                        color: #ffffff
+                        font-weight: bold
+                        line-height: 2
+                        letter-spacing: rem(0.02)
+                        @media screen and (max-width: 768px)
+                            font-size: rem(0.95)
+                    > div
+                        display: grid
+                        grid-template-rows: 1fr
+                        grid-template-columns: auto auto
+                        grid-column-gap: rem(2)
+                        grid-row-gap: rem(5)
+                        margin-top: rem(3)
+                        @media screen and (max-width: 768px)
+                            grid-template-columns: auto
+                            grid-row-gap: rem(3)
+                        div
+                            display: grid
+                            grid-template-rows: 300px rem(5) 1fr rem(5)
+                            grid-template-columns: auto
+                            @media screen and (max-width: 768px)
+                                grid-template-rows: 180px rem(5) 1fr rem(5)
+                            img
+                                display: block
+                                background-color: #ffffff
+                                width: 100%
+                                height: 300px
+                                border-radius: 4px
+                                object-fit: cover
+                                @media screen and (max-width: 768px)
+                                    height: 180px
+                            h4
+                                margin-top: rem(2)
+                                margin-bottom: rem(1)
+                                letter-spacing: rem(0.03)
+                                a
+                                    color: #ffffff
+                                    font-size: rem(1.6)
+                                    font-family: 'Noto Sans JP', sans-serif
+                                    font-weight: 900
+                                    text-decoration: none
+                                    @media screen and (max-width: 768px)
+                                        font-size: rem(1.4)
+                            p
+                                color: #ffffff
+                                font-weight: bold
+                                margin: 0
+                                font-size: rem(0.9)
+                                line-height: 1.8
+                                letter-spacing: rem(0.02)
+                                text-align: justify
+                                @media screen and (max-width: 768px)
+                                    font-size: rem(0.95)
+                            .more
+                                display: flex
+                                justify-content: center
+                                align-items: center
+                                font-family: 'Noto Sans JP', sans-serif
+                                color: #ffffff
+                                text-decoration: none
+                                border: 1px solid #ffffff
+                                border-radius: 50px
+                                margin-top: rem(1.5)
+                                padding: rem(0.8) 0
+                                &:hover, &:active
+                                    color: #00A6EA
+                                    background-color: #ffffff
+
+            section.happyshop
+                width: 100%
+                max-width: 100%
+                margin: rem(5) 0 0
+                @media screen and (max-width: 768px)
+                    display: none
+                a
+                    display: inline-flex
+                    align-items: center
+                    justify-content: center
+                    width: 100%
+                    height: rem(20)
+                    background-color: #FFF000
+                    background-image: url(./assets/icon-shop@2x.png)
+                    background-size: 86px 86px
+                    background-position: calc(50% - 240px - 80px) 110px
+                    background-repeat: no-repeat
+                    padding: rem(1.5)
+                    text-align: center
+                    color: #000000
+                    text-decoration: none
+                    font-family: 'Noto Sans JP', sans-serif
+                    font-weight: 900
+                    font-size: rem(2.2)
+                    img
+                        width: 400px
+                        margin-right: rem(1)
+
+            section#completion
+                margin: rem(3) auto 0
+                h4
+                    color: #ffffff
+                    font-family: 'Noto Sans JP', sans-serif
+                    font-weight: 900
+                    font-size: rem(2.2)
+                    margin:  0 0 rem(1)
+                    text-align: center
+                    @media screen and (max-width: 768px)
+                        font-size: rem(1.4)
+                img
+                    max-width: 1024px
+                    width: 100%
+
+            section#whatwearedoingnow
+                max-width: 100%
+                > div
+                    max-width: 1024px
+                    margin: rem(4) auto
+                    h3
+                        color: #ffffff
+                        font-size: rem(2.2)
+                        font-family: 'Noto Sans JP', sans-serif
+                        font-weight: 900
+                        margin:  0
+                        @media screen and (max-width: 768px)
+                            font-size: rem(1.4)
+                    > p
+                        color: #ffffff
+                        font-weight: bold
+                        line-height: 2
+                        letter-spacing: rem(0.02)
+                        @media screen and (max-width: 768px)
+                            font-size: rem(0.95)
+                    > div
+                        display: grid
+                        grid-template-rows: 1fr 1fr 1fr
+                        grid-template-columns: auto auto
+                        grid-column-gap: rem(2)
+                        grid-row-gap: rem(5)
+                        margin-top: rem(3)
+                        @media screen and (max-width: 768px)
+                            grid-template-columns: auto
+                            grid-row-gap: rem(3)
+                        div
+                            display: grid
+                            grid-template-rows: 300px rem(5) 1fr rem(5)
+                            grid-template-columns: auto
+                            @media screen and (max-width: 768px)
+                                grid-template-rows: 180px rem(5) 1fr rem(5)
+                            img
+                                display: block
+                                background-color: #ffffff
+                                width: 100%
+                                height: 300px
+                                border-radius: 4px
+                                object-fit: cover
+                                @media screen and (max-width: 768px)
+                                    height: 180px
+                            h4
+                                margin-top: rem(2)
+                                margin-bottom: rem(1)
+                                letter-spacing: rem(0.03)
+                                a
+                                    color: #ffffff
+                                    font-size: rem(1.6)
+                                    font-family: 'Noto Sans JP', sans-serif
+                                    font-weight: 900
+                                    text-decoration: none
+                                    @media screen and (max-width: 768px)
+                                        font-size: rem(1.4)
+                            p
+                                color: #ffffff
+                                font-weight: bold
+                                margin: 0
+                                font-size: rem(0.9)
+                                line-height: 1.8
+                                letter-spacing: rem(0.02)
+                                text-align: justify
+                                @media screen and (max-width: 768px)
+                                    font-size: rem(0.95)
+                            .more
+                                display: flex
+                                justify-content: center
+                                align-items: center
+                                font-family: 'Noto Sans JP', sans-serif
+                                color: #ffffff
+                                text-decoration: none
+                                border: 1px solid #ffffff
+                                border-radius: 50px
+                                margin-top: rem(1.5)
+                                padding: rem(0.8) 0
+                                &:hover, &:active
+                                    color: #00A6EA
+                                    background-color: #ffffff
+
+                                    
+

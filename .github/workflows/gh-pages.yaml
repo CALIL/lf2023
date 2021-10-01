@@ -16,13 +16,12 @@ jobs:
         run: |
           npm install
           npm run build
-
+      - name: Replace Path 🔧
+        run: |
+          node ./replace_path.js
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages
           folder: build/
 
-      - name: Replace Path 🔧
-        run: |
-          node ./replace_path.js

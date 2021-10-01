@@ -27,6 +27,7 @@
   <meta itemprop="description"
     content="毎年11月に開催される、国内最大の図書館に関する展示会「図書館総合展」はすべての展示ブースがオンラインで展開されます。カーリルのオンラインブースで、図書館や、ユーザーの皆様とつながることを楽しみにしています。">
   <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-32412597-1"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=fetch"></script>
   <script>
     var dnt = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
     if (dnt !== '1' && dnt !== 'yes') {
@@ -130,7 +131,7 @@
             src="./src/assets/logo-happyshop.svg" alt="">グッズ・カタログ</a><a
           href="https://libraryfair.jp/search/contents?keys=%E4%B8%BB%E5%82%AC%20%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%AB%E3%83%BC%E3%83%AA%E3%83%AB">イベント</a><a
           href="#labo">カーリルラボ</a><a class="zoom" href="https://timerex.net/s/caliljp_lf2020/72affc05"><img
-            src="./assets/logo-zoom.svg" alt="">ZOOM</a></section>
+            src="./src/assets//logo-zoom.svg" alt="">ZOOM</a></section>
       <section class="happyshop"><a href="https://happyshop.calil.jp/"><img src="./src/assets/logo-happyshop.svg"></a>
       </section>
       <div id="bg_tile">
@@ -175,7 +176,7 @@
             </p>
             <div>
               <div><a href="https://blog.calil.jp/2020/04/negima.html" target="_blank"><img
-                    src="./assets/gakko.png"></a>
+                    src="./src/assets//gakko.png"></a>
                 <h4><a href="https://blog.calil.jp/2020/04/negima.html" target="_blank">学校支援プログラム</a></h4>
                 <p>カーリルが2020 年4 月23
                   日に発表した「COVID-19：学校図書館支援プログラム」は、インターネットからアクセスできる簡易的な蔵書検索サービス（Web-OPAC）を無償提供することで、図書館の柔軟なサービス展開を支援する取り組みです。このプログラムは、5
@@ -183,7 +184,7 @@
                   href="https://blog.calil.jp/2020/04/negima.html" target="_blank">もっと詳しく</a>
               </div>
               <div><a href="https://blog.calil.jp/2016/04/unitrad.html" target="_blank"><img
-                    src="./assets/unitrad.png"></a>
+                    src="./src/assets//unitrad.png"></a>
                 <h4><a href="https://blog.calil.jp/2016/04/unitrad.html" target="_blank">Unitrad API</a></h4>
                 <p>
                   多くの図書館員は、横断検索システムが遅いのは図書館システムが遅いためだと考えてきました。しかし、実際にはこの数年で図書館システムの性能は大幅に改善しており、横断検索システムが最大のボトルネックとなっています。私たちはこの積み残された課題をまとめて解決する新しい横断検索API「カーリル
@@ -197,7 +198,7 @@
                   緊急事態宣言が発令され、国内の公立図書館の92パーセントが休館しました。世界的なパンデミックはまだ収束していませんが、すでに多くの図書館サービスは再開されています。事態は継続中ですが、私たちは記録を通して、今回の対応を検証し改善することができます。少なくとも、今回得られた知見は、今後の感染症対策のみならず、図書館の利用が制限されるさまざまな場面での参考となるはずだからです。COVID-19の経済への影響は甚大であり、公共機関では予算削減による影響から逃れることはできません。このような中で、図書館機能を維持、そして発展させるためには、「工夫」が必要になります。カーリルではその場しのぎではなく、長期的な視点で技術開発と新しいデザインを考えます。
                 </p><a class="more" href="https://blog.calil.jp/2020/05/with-covid.html" target="_blank">もっと詳しく</a>
               </div>
-              <div><a href="https://openbd.jp/" target="_blank"><img src="./assets/openbd.png"></a>
+              <div><a href="https://openbd.jp/" target="_blank"><img src="./src/assets//openbd.png"></a>
                 <h4><a href="https://openbd.jp/" target="_blank">openBD</a></h4>
                 <p>
                   カーリルは270社以上が加盟する中小出版社の業界団体「版元ドットコム」と協業して、「openBD」プロジェクトを立ち上げました。出版社が発信した書誌情報・書影を収集し、統合した書誌情報に自由にアクセスすることができます。2020年10月現在、146万タイトル以上の書誌情報を供給しており、国内3万社以上の出版社の書誌情報への統合的なアクセスを提供します。
@@ -210,18 +211,17 @@
                   図書館や本屋さんを歩き回ることは、「知らない情報に出合う機会」を提供してくれます。これは「検索」や「SNS」には代替できない場として重要な機能のひとつです。カーリルブックウォークは、インターネット上で少しでもそんな体験を実現することを目指したウェブサービスです。1ページにまとめて表示された20万冊の表紙画像を自由に歩き回って読みたい本を見つけることができます。検索機能はありません！
                 </p><a class="more" href="https://calil.jp/bookwalk/" target="_blank">もっと詳しく</a>
               </div>
-              <div><a href="https://blog.calil.jp/" target="_blank"><img src="./assets/more.png"></a>
+              <div><a href="https://blog.calil.jp/" target="_blank"><img src="./src/assets//more.png"></a>
                 <h4><a href="https://blog.calil.jp/" target="_blank">もっと知りたい</a></h4>
                 <p>&nbsp;</p><a class="more" href="https://blog.calil.jp/" target="_blank">もっと詳しく</a>
               </div>
             </div>
           </div>
         </section>
-        <section id="completion"><img src="./assets/completion.jpg" alt="完成！"></section>
+        <section id="completion"><img src="./src/assets//completion.jpg" alt="完成！"></section>
       </div>
     </article>
   </div>
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=fetch"></script>
   <script src="./src/js/index.js"></script>
 </body>
 

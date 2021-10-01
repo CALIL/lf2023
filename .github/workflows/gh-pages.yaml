@@ -22,3 +22,7 @@ jobs:
         with:
           branch: gh-pages
           folder: build/
+
+      - name: Replace Path 🔧
+        run: |
+          node ./replace_path.js

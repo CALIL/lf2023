@@ -12,18 +12,21 @@ npm install
 npm start
 ```
 
+## ScreenShot
+
+Firefoxでbodyのサイズが1280x750になるように調整  
+PhotoShopで1024x600(retina対応)で書き出し  
+画像は512x300で表示される
+
+
 ## Deploy
 
 GitHub Actionsで。  
 コミットするとデプロイされる。  
 
-Todo
-
 ```
-"deploy": "cpx \"build/**/*\" docs/ && node ./replace_path.js",
+node ./replace_path.js
 ```
-
-これをGitHub Actionsに組み込む
 
 ## CloudFunctions
 

@@ -28,20 +28,6 @@ GitHub Actionsで。
 node ./replace_path.js
 ```
 
-## CloudFunctions
-
-```
-cd cloudfunctions
-npm install  
-npm start
-npm run deploy
-```
-
-https://asia-northeast1-calil-sandbox.cloudfunctions.net/lfRedirect
-
-となりのブースへのランダムリンク用。  
-URLの管理はFireStoreで。
-
 ## ライセンスについて
 
 The MIT License (MIT)

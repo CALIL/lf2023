@@ -8,7 +8,7 @@ const locals = {}
 export default defineConfig({
   plugins: [],
   server: { port: 3000 },
-  base: '/lf2021/',
+  base: '/lf2023/',
   publicDir: './src/',
   optimizeDeps: {
   },

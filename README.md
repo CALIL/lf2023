@@ -29,6 +29,30 @@ GitHub Actionsで
 node ./replace_path.js
 ```
 
+## 図書館総合展のサイトのCSSハック
+
+```css
+<style type="text/css">
+body {
+overflow-x: hidden;
+}
+.main-container {
+max-width: 100%;
+padding: 0;
+}
+.row {
+display: block;
+}
+.col-sm-12 {
+padding: 0;
+}
+.bs-region--left {
+max-width: 100%;
+}
+</style>
+```
+
+
 ## ライセンスについて
 
 The MIT License (MIT)

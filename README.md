@@ -21,8 +21,8 @@ PhotoShopで1024x600(retina対応)で書き出し
 
 ## Deploy
 
-GitHub Actionsで。  
-コミットするとデプロイされる。  
+GitHub Actionsで  
+コミットするとデプロイされる  
 
 ```
 node ./replace_path.js
